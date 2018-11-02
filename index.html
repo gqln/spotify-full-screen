@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<style>
+	html {
+		background: #222;
+	}
+	body {
+		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.element {
+		left: 35px;
+		font-family: "San Francisco Display", BlinkMacSystemFont, "Helvetica";
+	    font-weight: 900;
+	    color: white;
+	    background-color: black;
+	    border-radius: 7.5px;
+	    padding: 10px;
+	}
+	#title {
+	    position: absolute;
+	    bottom: 125px;
+	    font-size: 50px;
+	    animation-name: pulse;
+    	animation-duration: 3s;
+    	animation-iteration-count: infinite;
+	}
+	#linky {
+	    position: absolute;
+	    bottom: 25px;
+	    font-size: 50px;
+	    color: #25d34e;
+	}
+	#linky:hover {
+		background-color: #25d34e;
+		color: white;
+	}
+	#linky:active {
+		background-color: white;
+	    color: #25d34e;
+	}
+	@keyframes pulse {
+    	0% {color: red;}
+    	25% {color: orange;}
+    	100% {color: red;}
+	}
+</style>
+<html>
+<head>
+  <title>spotify</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+  <code class="element" id="title">a spotify full screen view for my projector</code>
+  <a class="element" id="linky" href="#">login</a>
+  <script src="./index.js"></script>
+</body>
+</html>
